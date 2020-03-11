@@ -36,7 +36,7 @@ const { getUserFromAzure } = require(`path/to/this/file`)
 */
 
 const { Request } = require(`tedious`)
-const connection = require(`../databases`)
+const mssqldb = require(`../databases`)
 
 /**
  * Grabs a user asynchronously from a SQL Database hosted on Azure
@@ -137,7 +137,7 @@ exports.getUserFromAzure = email =>
 		// make the request. We've imported the connection object from the db-setup.js file
 		// so that we can call execSql() on the request, and voila! that's how we check our
 		// Azure SQL database for a user!
-		connection.execSql(request)
+		mssqldb.execSql(request)
 	})
 
 // This method is a middleware that I made that just checks if there's a `user` object
