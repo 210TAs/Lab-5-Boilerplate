@@ -3,10 +3,10 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"start": "nodemon ./bin/www"
+		"start": "nodemon server"
 	},
 	"description": "Starter Files for lab 5",
-	"main": "app.js",
+	"main": "server.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/210TAs/Lab-5-Boilerplate.git"

@@ -36,7 +36,7 @@ const { getUserFromAzure } = require(`path/to/this/file`)
 */
 
 const { Request } = require(`tedious`)
-const mssqldb = require(`../databases`)
+const mssqldb = require(`../mssqldb`)
 
 /**
  * Grabs a user asynchronously from a SQL Database hosted on Azure
