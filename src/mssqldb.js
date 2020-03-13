@@ -25,8 +25,8 @@ const { Connection } = require(`tedious`)
 const mssqldb = new Connection({
 	authentication: {
 		options: {
-			userName: "adminuser",
-			password: "resunimda1!",
+			userName: process.env.AZURE_DB_ADMIN_USERNAME,
+			password: process.env.AZURE_DB_ADMIN_PASSWORD,
 		},
 		type: "default"
 	},
